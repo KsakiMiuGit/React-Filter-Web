@@ -1,0 +1,33 @@
+/* Stylizacja dla kontenera siatki */
+.champion-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cztery kolumny obok siebie */
+    gap: 20px; /* Odstêp miêdzy elementami */
+    margin-top: 20px;
+}
+
+/* Stylizacja dla ka¿dego kwadratu z postaci¹ */
+.champion-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+/* Stylizacja dla obrazka postaci */
+.champion-image {
+    width: 350px;
+    height: 220px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Zmiana koloru na hover */
+.champion-card:hover {
+    transform: scale(1.05);
+}

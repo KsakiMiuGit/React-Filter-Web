@@ -1,0 +1,17 @@
+/* ThemeToggleButton.css */
+.theme-toggle-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00BFFF;
+    color: #fff;
+    font-size: 16px;
+}
+
+    .theme-toggle-btn:hover {
+        background-color: #0056b3;
+    }

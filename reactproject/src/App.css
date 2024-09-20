@@ -1,0 +1,72 @@
+/* Stylizacja dla kontenera aplikacji */
+.app-container {
+    padding: 20px;
+    min-height: 100vh; /* Zapewnia, ¿e t³o rozci¹ga siê na ca³¹ wysokoœæ widoku */
+    background-color: inherit; /* Dziedziczy t³o z trybu jasnego/ciemnego */
+    color: inherit; /* Dziedziczy kolor tekstu z trybu jasnego/ciemnego */
+    border: none;
+}
+
+/* Stylizacja nag³ówka */
+.header {
+    color: inherit; /* Kolor bêdzie dziedziczony z trybu */
+}
+
+/* Stylizacja dla kontenera filtrów */
+.filters-container {
+    position: sticky;
+    top: 0; /* Przyklej do górnej czêœci widoku */
+    background-color: inherit; /* T³o bêdzie dziedziczone */
+    padding: 10px;
+    border-bottom: 1px solid #ddd; /* Opcjonalne, aby oddzieliæ filtry od treœci */
+    z-index: 100; /* Ustaw wy¿szy z-index, aby filtry by³y nad innymi elementami */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Style domyœlne (tryb jasny) */
+.light-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+    .light-mode .champion-card {
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+    }
+
+/* Style dla trybu ciemnego */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+    .dark-mode .champion-card {
+        background-color: #444;
+        border: 1px solid #555;
+    }
+
+/* Stylizacja dla przycisku zmiany motywu */
+.theme-toggle-btn {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #00BFFF;
+    color: #fff;
+    font-size: 16px;
+}
+
+    .theme-toggle-btn:hover {
+        background-color: #0056b3;
+    }
+
+.filters-container input,
+.filters-container select,
+.filters-container button {
+    margin: 5px;
+}
