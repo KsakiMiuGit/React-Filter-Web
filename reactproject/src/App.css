@@ -1,31 +1,31 @@
-/* Stylizacja dla kontenera aplikacji */
+
 .app-container {
     padding: 20px;
-    min-height: 100vh; /* Zapewnia, ¿e t³o rozci¹ga siê na ca³¹ wysokoœæ widoku */
-    background-color: inherit; /* Dziedziczy t³o z trybu jasnego/ciemnego */
-    color: inherit; /* Dziedziczy kolor tekstu z trybu jasnego/ciemnego */
+    min-height: 100vh; 
+    background-color: inherit;
+    color: inherit; 
     border: none;
 }
 
-/* Stylizacja nag³ówka */
+
 .header {
-    color: inherit; /* Kolor bêdzie dziedziczony z trybu */
+    color: inherit; 
 }
 
-/* Stylizacja dla kontenera filtrów */
+
 .filters-container {
     position: sticky;
-    top: 0; /* Przyklej do górnej czêœci widoku */
-    background-color: inherit; /* T³o bêdzie dziedziczone */
+    top: 0; 
+    background-color: inherit; 
     padding: 10px;
-    border-bottom: 1px solid #ddd; /* Opcjonalne, aby oddzieliæ filtry od treœci */
-    z-index: 100; /* Ustaw wy¿szy z-index, aby filtry by³y nad innymi elementami */
+    border-bottom: 1px solid #ddd;
+    z-index: 100; 
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-/* Style domyœlne (tryb jasny) */
+
 .light-mode {
     background-color: #fff;
     color: #000;
@@ -36,7 +36,7 @@
         border: 1px solid #ddd;
     }
 
-/* Style dla trybu ciemnego */
+
 .dark-mode {
     background-color: #333;
     color: #fff;
@@ -47,7 +47,7 @@
         border: 1px solid #555;
     }
 
-/* Stylizacja dla przycisku zmiany motywu */
+
 .theme-toggle-btn {
     position: fixed;
     top: 10px;
